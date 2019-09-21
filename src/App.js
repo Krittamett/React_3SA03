@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import WordCard from "./WordCard";
 import Timer from "./Timer";
 import AddName from "./AddName"
+import  Footer from './Footer';
 import './App.css';
 const word = "Hello"
 class App extends Component { 
@@ -11,6 +12,7 @@ class App extends Component {
       <AddName/>
       <WordCard value = {word}/>
       <Timer/>
+      <Footer/>
     </div> 
     ); 
   } 
