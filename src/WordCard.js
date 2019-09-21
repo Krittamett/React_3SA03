@@ -29,6 +29,7 @@ export default class WordCard extends Component{
             if(guess == this.state.word){
                 this.setState({guess : [] , completed: true})
                 alert("You WIN!!")
+                
             }else{
                 this.setState({guess : [] , attempt: this.state.attempt+1})
                 alert("You LOSE !!  Try Agains")
@@ -44,9 +45,9 @@ export default class WordCard extends Component{
             {
                 Array.from(this.state.chars).map((c,i) => <CharacterCard value = {c} key={i} attempt = {this.state.attempt}
                 activationHandler = {this.activationHandler}/>)
-            }
-            
+            }      
             <p>{this.state.completed? "WIN":" "}</p>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/53002798&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
         )
     }

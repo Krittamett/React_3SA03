@@ -4,6 +4,7 @@ import Timer from "./Timer";
 import  Footer from './Footer';
 import './App.css';
 const word = "Hello"
+
 class App extends Component {
   constructor() {
     super()
@@ -27,14 +28,17 @@ class App extends Component {
     return ( 
     <div className = "page">
       <div className="setname">
-                <p>Enter your name</p>
-                <input type="text" onChange={this.setName.bind(this)} />
-                <button onClick={this.begin}>Start game</button>
-                <p>Welcome : {this.state.type}</p>
-            </div>
+        <p>Enter your name</p>
+        <input type="text" onChange={this.setName.bind(this)} />
+        <button onClick={this.begin}>Start game</button>
+        <p>Welcome : {this.state.type}</p>
+      </div>
       <WordCard value = {word}/>
       <Timer/>
-      <div className="Center"><button onClick = {this.answer}>ANSWER HERE</button><p>{this.state.message}</p></div>
+      <div className="Center">
+        <button onClick = {this.answer}>ANSWER HERE</button
+        ><p>{this.state.message}</p>
+      </div>
       <Footer/>
     </div> 
     ); 
