@@ -3,6 +3,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+body{
+  background-color:rgb(0, 102, 51);
+  font-family: "Athiti", Athiti;
+  font-size:18px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -37,8 +42,8 @@
   user-select: none;
   }
 .activeCard {
-    color: red;
-    background: pink;
+  color: rgb(0, 0, 0);
+  background: rgb(107, 179, 93);
 }
 .page{
   width: 1200px;
