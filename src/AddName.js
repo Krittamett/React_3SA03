@@ -5,11 +5,15 @@ import React, { Component } from 'react';
         super(props)
         alert("#### Welcome ####")
     }
+    begin(){
+        alert("BEGIN !!")
+    }
     render(){
         return(
             <div className="addname">
                 <p>Enter your name</p>
-                <input type="string" onBlur={this.onBlur} />
+                <input type="text" id="userName" name="userName" />
+                <button onClick={this.begin}>Start game</button>
             </div>
         )
 
